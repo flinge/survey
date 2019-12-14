@@ -161,6 +161,12 @@ button:hover{
   background-color: #4CAF50;
 }
 
+
+.score {
+  font-weight: 900;
+
+}
+
 </style>
 </head>
 <body>
@@ -412,7 +418,7 @@ function showResults(){
   });
 
   // show number of correct answers out of total
-  resultsContainer.innerHTML = 'Your score is ' + totalScore + ' 🎉';
+  resultsContainer.innerHTML = 'Your score is <span class="score">' + totalScore + '</span> 🎉';
 }
 
 submitButton.addEventListener("click", showResults);
@@ -421,3 +427,11 @@ submitButton.addEventListener("click", showResults);
 
 </body>
 </html>
+
+<!--
+   __o            __o            __o            __o            __o
+ _`\<,_         _`\<,_         _`\<,_         _`\<,_         _`\<,_
+(_)/ (_)       (_)/ (_)       (_)/ (_)       (_)/ (_)       (_)/ (_)
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+ -->
