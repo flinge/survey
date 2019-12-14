@@ -1,3 +1,4 @@
+<!-- Credits: https://www.sitepoint.com/simple-javascript-quiz/ -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,11 +6,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
-
 body{
   font-size: 15px;
   text-align: center;
-  color: #333;
+  background-color: rgb(247, 246, 243);
 }
 
 * {
@@ -17,10 +17,9 @@ body{
   font-weight: 400;
 }
 
-
 button{
   font-size: 15px;
-  background-color: #279;
+  background-color: rgb(203,157,157);
   color: #fff;
   border: 0px;
   border-radius: 5px;
@@ -30,14 +29,14 @@ button{
 
 }
 button:hover{
-  background-color: #38a;
+  background-color: rgb(233,187,187);
 }
 #submit{
-  font-weight: 600;
-  background-color: #FA8072;
+  font-weight: 900;
+  background-color: rgb(155, 182, 212);
 }
 #submit:hover{
-  background-color: #E9967A;
+  background-color: rgb(185, 212, 242);
 }
 
 /* customizing quiz questions/answers/radio buttons */
@@ -106,7 +105,7 @@ button:hover{
   margin-right: 15px;
   height: 25px;
   width: 25px;
-  background-color: #eee;
+  background-color: #ddd;
   border-radius: 50%;
 }
 
@@ -115,9 +114,9 @@ button:hover{
   background-color: #ccc;
 }
 
-/* When the radio button is checked, add a blue background */
+/* When the radio button is checked, add a background */
 .container input:checked ~ .checkmark {
-  background-color: #2196F3;
+  background-color: rgb(155, 182, 212);
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -158,12 +157,11 @@ button:hover{
 #myBar {
   width: 1%;
   height: 30px;
-  background-color: #4CAF50;
+  background-color: rgb(151, 170, 152) ;
 }
 
-
 .score {
-  font-weight: 900;
+  background-color: rgb(236, 224, 165);
 
 }
 
@@ -418,7 +416,7 @@ function showResults(){
   });
 
   // show number of correct answers out of total
-  resultsContainer.innerHTML = 'Your score is <span class="score">' + totalScore + '</span> 🎉';
+  resultsContainer.innerHTML = '<span class="score">Your score is ' + totalScore + ' 🎉</span>';
 }
 
 submitButton.addEventListener("click", showResults);
