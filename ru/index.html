@@ -2,29 +2,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>AnyThink - how do you manage knowledge?</title>
+<title>AnyThink - как много информации вы поглощаете?</title>
 
 <!-- ****** faviconit.com favicons ****** -->
-<link rel="shortcut icon" href="/favicons/favicon.ico">
-<link rel="icon" sizes="16x16 32x32 64x64" href="/favicons/favicon.ico">
-<link rel="icon" type="image/png" sizes="196x196" href="/favicons/favicon-192.png">
-<link rel="icon" type="image/png" sizes="160x160" href="/favicons/favicon-160.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96.png">
-<link rel="icon" type="image/png" sizes="64x64" href="/favicons/favicon-64.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16.png">
-<link rel="apple-touch-icon" href="/favicons/favicon-57.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/favicons/favicon-114.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/favicons/favicon-72.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/favicons/favicon-144.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/favicons/favicon-60.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/favicons/favicon-120.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/favicons/favicon-76.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/favicons/favicon-152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/favicons/favicon-180.png">
+<link rel="shortcut icon" href="../favicons/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="../favicons/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="../favicons/favicon-192.png">
+<link rel="icon" type="image/png" sizes="160x160" href="../favicons/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../favicons/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="../favicons/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16.png">
+<link rel="apple-touch-icon" href="../favicons/favicon-57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../favicons/favicon-114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../favicons/favicon-72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../favicons/favicon-144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../favicons/favicon-60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../favicons/favicon-120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../favicons/favicon-76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../favicons/favicon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../favicons/favicon-180.png">
 <meta name="msapplication-TileColor" content="#FFFFFF">
-<meta name="msapplication-TileImage" content="/favicons/favicon-144.png">
-<meta name="msapplication-config" content="/favicons/browserconfig.xml">
+<meta name="msapplication-TileImage" content="../favicons/favicon-144.png">
+<meta name="msapplication-config" content="../favicons/browserconfig.xml">
 <!-- ****** faviconit.com favicons ****** -->
 
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900&display=swap" rel="stylesheet">
@@ -202,9 +202,9 @@ button:hover{
     <div id="myBar"></div>
 </div>
 <br>
-<button id="previous">Previous Question</button>
-<button id="next">Next Question</button>
-<button id="submit">Submit Quiz</button>
+<button id="previous">Предыдущий</button>
+<button id="next">Следующий</button>
+<button id="submit">Посчитать</button>
 <div id="results"></div>
 
 
@@ -216,7 +216,7 @@ const submitButton = document.getElementById('submit');
 
 const myQuestions = [
   {
-    question: "📚 How many books do you read per year?",
+    question: "📚 Сколько книг читаете в год?",
     answers: {
       a: "2-5",
       b: "5-10",
@@ -231,12 +231,12 @@ const myQuestions = [
     }
   },
   {
-    question: "📃 How often do you read long articles?",
+    question: "📃 Как часто читаете длинные статьи?",
     answers: {
-      a: "Almost daily",
-      b: "Couple times a week",
-      c: "Couple times a month",
-      d: "Very rarely"
+      a: "Почти каждый день",
+      b: "Пару раз в неделю",
+      c: "Пару раз в месяц",
+      d: "Редко"
     },
     scores: {
       a: 3,
@@ -246,24 +246,24 @@ const myQuestions = [
     }
   },
   {
-    question: "🎓 How many courses do you do per year?",
+    question: "🎓 Проходите ли образовательные курсы?",
     answers: {
-      a: "Never do it",
-      b: "About 2 per year",
-      c: "Once a year"
+      a: "Никогда",
+      b: "2 или больше в год",
+      c: "Может, раз в год"
 
     },
     scores: {
       a: 0,
-      b: 1,
-      c: 2
+      b: 2,
+      c: 1
     }
   },
   {
-    question: "🎙 Do you listen to podcasts?",
+    question: "🎙 Слушаете подкасты?",
     answers: {
-      a: "Yes",
-      b: "No"
+      a: "Да",
+      b: "Нет"
 
     },
     scores: {
@@ -272,11 +272,11 @@ const myQuestions = [
     }
   },
   {
-    question: "📺 Do you watch educational videos?",
+    question: "📺 Смотрите образовательные видео или лекции?",
     answers: {
-      a: "Yes, at least once a week",
-      b: "May be once a month",
-      c: "Not really"
+      a: "Да, еженедельно",
+      b: "Может быть, раз в месяц",
+      c: "Не очень"
 
     },
     scores: {
@@ -286,11 +286,11 @@ const myQuestions = [
     }
   },
   {
-    question: "📝 Do you take notes while reading?",
+    question: "📝 Делаете ли записи по ходу чтения или после?",
     answers: {
-      a: "Almost always",
-      b: "Sometimes",
-      c: "Never"
+      a: "Почти всегда",
+      b: "Иногда",
+      c: "Никогда"
 
     },
     scores: {
@@ -300,26 +300,26 @@ const myQuestions = [
     }
   },
   {
-    question: "✍ Do you write book reviews?",
+    question: "✍ Пишите ли отзывы на книги?",
     answers: {
-      a: "Nope",
-      b: "Sometimes for myself",
-      c: "Always for myself",
-      d: "Write publicly"
+      a: "Неа",
+      b: "Иногда для себя",
+      c: "Всегда для себя",
+      d: "Пишу публично"
 
     },
     scores: {
       a: 0,
       b: 2,
-      c: 2,
+      c: 3,
       d: 3
     }
   },
   {
-    question: "📱 Do you use an app for notes?",
+    question: "📱 Используете ли приложение для заметок?",
     answers: {
-      a: "Yes",
-      b: "No"
+      a: "Да",
+      b: "Нет"
 
     },
     scores: {
@@ -442,7 +442,7 @@ function showResults(){
   });
 
   // show number of correct answers out of total
-  resultsContainer.innerHTML = '<span class="score">Your score is ' + totalScore + ' 🎉</span>';
+  resultsContainer.innerHTML = '<span class="score">Вы набрали ' + totalScore + ' баллов 🎉<br>Возвращайтесь на сайт!</span>';
 }
 
 submitButton.addEventListener("click", showResults);
