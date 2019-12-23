@@ -187,7 +187,7 @@ button:hover{
 }
 
 .score {
-  background-color: rgb(236, 224, 165);
+  /* background-color: rgb(236, 224, 165); */
 
 }
 
@@ -249,14 +249,14 @@ const myQuestions = [
     question: "🎓 How many courses do you do per year?",
     answers: {
       a: "Never do it",
-      b: "About 2 per year",
+      b: "2 per year or more",
       c: "Once a year"
 
     },
     scores: {
       a: 0,
-      b: 1,
-      c: 2
+      b: 2,
+      c: 1
     }
   },
   {
@@ -442,7 +442,7 @@ function showResults(){
   });
 
   // show number of correct answers out of total
-  resultsContainer.innerHTML = '<span class="score">Your score is ' + totalScore + ' 🎉</span>';
+  resultsContainer.innerHTML = '<span class="score">Your score is ' + totalScore + ' 🎉<br/>Go back to the website!</span>';
 }
 
 submitButton.addEventListener("click", showResults);
